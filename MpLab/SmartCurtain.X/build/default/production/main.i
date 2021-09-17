@@ -7,7 +7,6 @@
 # 1 "D:/X64/Mplab/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-
 # 1 "./pinout.h" 1
 
 
@@ -5705,22 +5704,23 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
     void MSdelay(unsigned int);
 # 75 "./config.h" 2
 # 7 "./pinout.h" 2
-# 2 "main.c" 2
+# 1 "main.c" 2
+
 
 
 
 void main(void) {
-    TRISB = 0;
-    while(1)
-    {
-        LATEbits.RE0 = 1;
-        LATEbits.RE1 = 0;
-        LATEbits.RE2 = 1;
-        _delay((unsigned long)((1000)*(8000000/4000.0)));
-        LATEbits.RE0 = 0;
-        LATEbits.RE1 = 1;
-        LATEbits.RE2 = 0;
-        return;
-    }
+    OSCCON=00;
+    TRISB = 1;
+
+    TRISE = 1;
+    TRISEbits.RE1 = 1;
+    TRISEbits.RE2 = 1;
+    MSdelay(1000);
+    TRISEbits.RE0 = 0;
+    TRISEbits.RE1 = 0;
+    TRISEbits.RE2 = 0;
+    return;
+
 
 }

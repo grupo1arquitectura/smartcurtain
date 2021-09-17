@@ -12,9 +12,9 @@
 extern "C" {
 #endif
 
-#define LED_RE0 LATEbits.RE0 //LED 1
-#define LED_RE1 LATEbits.RE1 //LED 2
-#define LED_RE2 LATEbits.RE2 //LED 3
+#define LED_RE0 TRISEbits.RE0 //LED 1
+#define LED_RE1 TRISEbits.RE1 //LED 2
+#define LED_RE2 TRISEbits.RE2 //LED 3
 
 
 

@@ -78,7 +78,7 @@
 #define	CONFIG_H
 
 #define _XTAL_FREQ 8000000 //Frecuencia del crital Oscilador.
-#define DELAY(a) MSDelay (a);
+#define DELAY(a) MSDelay(a);
 
 
 
