@@ -11,16 +11,40 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+$C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
 idloc IDLOC 5 200000 200000 8 1
 init CODE 0 0 0 4 1
 config CONFIG 4 300000 300000 E 1
 $dist/default/production\SmartCurtain.X.production.o
-cinit CODE 0 7F8A 7F8A 6 1
+cinit CODE 0 78C4 78C4 56 1
 idloc IDLOC 5 200000 200000 8 1
-text0 CODE 0 7F90 7F90 26 1
-text1 CODE 0 7FB6 7FB6 4A 1
-cstackCOMRAM COMRAM 1 1 1 6 1
+text0 CODE 0 772A 772A 8 1
+text1 CODE 0 7C38 7C38 244 1
+text2 CODE 0 7732 7732 A 1
+text3 CODE 0 771C 771C 6 1
+text4 CODE 0 7718 7718 4 1
+text5 CODE 0 7714 7714 4 1
+text6 CODE 0 7710 7710 4 1
+text7 CODE 0 7978 7978 82 1
+text8 CODE 0 7AB0 7AB0 188 1
+text9 CODE 0 770E 770E 2 1
+text10 CODE 0 7768 7768 1C 1
+text11 CODE 0 7784 7784 2C 1
+text12 CODE 0 7756 7756 12 1
+text13 CODE 0 77E4 77E4 40 1
+text14 CODE 0 791A 791A 5E 1
+text15 CODE 0 7874 7874 50 1
+text16 CODE 0 77B0 77B0 34 1
+text17 CODE 0 7722 7722 8 1
+text18 CODE 0 7824 7824 50 1
+text19 CODE 0 79FA 79FA B6 1
+idataCOMRAM CODE 0 7749 7749 D 1
+cstackCOMRAM COMRAM 1 31 31 17 1
+idataBANK0 CODE 0 773D 773D C 1
+dataBANK0 BANK0 1 60 60 C 1
+dataCOMRAM COMRAM 1 48 48 D 1
+bssCOMRAM COMRAM 1 1 1 30 1
+mediumconst MEDIUMCONST 0 7E7C 7E7C 184 1
 config CONFIG 4 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
@@ -28,9 +52,9 @@ config CONFIG 4 300000 300000 E 1
 #    <class name> <range> <delta>
 # Addresses given in the range are in hexadecimal and units of delta.
 %UNUSED
-RAM 60-7FF 1
+RAM 6C-7FF 1
 SFR F60-FFF 1
-BANK0 60-FF 1
+BANK0 6C-FF 1
 BANK1 100-1FF 1
 BANK2 200-2FF 1
 BANK3 300-3FF 1
@@ -38,14 +62,19 @@ BANK4 400-4FF 1
 BANK5 500-5FF 1
 BANK6 600-6FF 1
 BANK7 700-7FF 1
-CONST 4-7F89 1
-STACK 60-7FF 1
-SMALLCONST 800-7F89 1
-CODE 4-7F89 1
-BIGRAM 7-7FF 1
-COMRAM 7-5F 1
+CONST 4-770D 1
+CONST 773C-773C 1
+STACK 6C-7FF 1
+SMALLCONST 800-770D 1
+SMALLCONST 773C-773C 1
+CODE 4-770D 1
+CODE 773C-773C 1
+BIGRAM 55-5F 1
+BIGRAM 6C-7FF 1
+COMRAM 55-5F 1
 EEDATA F00000-F000FF 1
-MEDIUMCONST 800-7F89 1
+MEDIUMCONST 800-770D 1
+MEDIUMCONST 773C-773C 1
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -60,27 +89,234 @@ MEDIUMCONST 800-7F89 1
 # All other numeric values are in decimal.
 %LINETAB
 $dist/default/production\SmartCurtain.X.production.o
-7FB6 text1 CODE >2:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\utils.c
-7FB6 text1 CODE >5:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\utils.c
-7FC2 text1 CODE >6:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\utils.c
-7FFE text1 CODE >7:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\utils.c
-7F90 text0 CODE >5:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7F90 text0 CODE >6:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7F94 text0 CODE >7:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7F98 text0 CODE >9:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7F9C text0 CODE >10:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7F9E text0 CODE >11:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7FA0 text0 CODE >12:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7FAC text0 CODE >13:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7FAE text0 CODE >14:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7FB0 text0 CODE >15:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7FB2 text0 CODE >19:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
-7F8A cinit CODE >507:C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.s
-7F8A cinit CODE >509:C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.s
-7F8A cinit CODE >512:C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.s
-7F8A cinit CODE >518:C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.s
-7F8A cinit CODE >520:C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.s
-7F8C cinit CODE >521:C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.s
+79FA text19 CODE >69:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+79FA text19 CODE >71:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A12 text19 CODE >74:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A1A text19 CODE >77:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A22 text19 CODE >79:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A28 text19 CODE >80:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A3E text19 CODE >81:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A54 text19 CODE >82:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A6A text19 CODE >83:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A80 text19 CODE >84:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7A9C text19 CODE >85:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7AA0 text19 CODE >86:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7AAE text19 CODE >87:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsTeclado.c
+7824 text18 CODE >17:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7826 text18 CODE >19:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7836 text18 CODE >20:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7838 text18 CODE >21:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+783A text18 CODE >22:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+783C text18 CODE >23:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+783E text18 CODE >24:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+784C text18 CODE >25:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+785E text18 CODE >26:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7860 text18 CODE >27:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7862 text18 CODE >28:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7864 text18 CODE >29:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7872 text18 CODE >30:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7722 text17 CODE >79:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7722 text17 CODE >81:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7728 text17 CODE >82:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77B0 text16 CODE >4:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77B0 text16 CODE >6:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77B4 text16 CODE >7:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77C4 text16 CODE >8:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77CA text16 CODE >10:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77D0 text16 CODE >12:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77D6 text16 CODE >13:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77DC text16 CODE >14:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77E2 text16 CODE >15:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7874 text15 CODE >35:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7876 text15 CODE >37:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7886 text15 CODE >38:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7888 text15 CODE >39:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+788A text15 CODE >40:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+788C text15 CODE >41:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+788E text15 CODE >42:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+789C text15 CODE >43:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+78AE text15 CODE >44:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+78B0 text15 CODE >45:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+78B2 text15 CODE >46:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+78B4 text15 CODE >47:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+78C2 text15 CODE >48:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+791A text14 CODE >49:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+791A text14 CODE >51:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+791E text14 CODE >53:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7942 text14 CODE >54:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7946 text14 CODE >51:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7976 text14 CODE >58:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77E4 text13 CODE >60:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77E6 text13 CODE >62:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77E6 text13 CODE >63:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77F6 text13 CODE >65:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+77FE text13 CODE >66:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7804 text13 CODE >67:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7808 text13 CODE >70:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7810 text13 CODE >71:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7816 text13 CODE >75:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7822 text13 CODE >77:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsLcd.c
+7756 text12 CODE >56:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsBluetooth.c
+7756 text12 CODE >59:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsBluetooth.c
+7764 text12 CODE >60:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsBluetooth.c
+7766 text12 CODE >61:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsBluetooth.c
+7784 text11 CODE >32:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7784 text11 CODE >34:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7796 text11 CODE >36:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7796 text11 CODE >38:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7798 text11 CODE >39:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+77A6 text11 CODE >40:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+77AC text11 CODE >43:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+77AE text11 CODE >44:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7768 text10 CODE >22:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7768 text10 CODE >24:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+777A text10 CODE >26:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+777C text10 CODE >27:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7780 text10 CODE >28:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7782 text10 CODE >30:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+770E text9 CODE >74:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+770E text9 CODE >77:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AB0 text8 CODE >34:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AB0 text8 CODE >36:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AB4 text8 CODE >37:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AC0 text8 CODE >38:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AD2 text8 CODE >40:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7ADE text8 CODE >41:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AEA text8 CODE >42:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7AF6 text8 CODE >43:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B2C text8 CODE >45:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B34 text8 CODE >46:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B3C text8 CODE >47:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B44 text8 CODE >48:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B50 text8 CODE >49:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B54 text8 CODE >52:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B60 text8 CODE >53:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B6C text8 CODE >54:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B7E text8 CODE >55:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B8C text8 CODE >56:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7B9E text8 CODE >57:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7BAC text8 CODE >58:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7BBE text8 CODE >59:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7BCC text8 CODE >60:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7BDE text8 CODE >61:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7BEC text8 CODE >62:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7BFE text8 CODE >64:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7C10 text8 CODE >65:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7C22 text8 CODE >66:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7C32 text8 CODE >68:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7C36 text8 CODE >72:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7978 text7 CODE >80:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7978 text7 CODE >83:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+798A text7 CODE >84:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79A2 text7 CODE >85:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79B4 text7 CODE >86:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79CC text7 CODE >88:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79DE text7 CODE >90:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79E2 text7 CODE >92:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79F4 text7 CODE >94:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+79F8 text7 CODE >96:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsDespertador.c
+7710 text6 CODE >3:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7710 text6 CODE >5:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7712 text6 CODE >6:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsAlarmas.c
+7714 text5 CODE >4:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7714 text5 CODE >6:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7716 text5 CODE >7:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7718 text4 CODE >9:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7718 text4 CODE >11:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+771A text4 CODE >12:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+771C text3 CODE >14:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+771C text3 CODE >16:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+771E text3 CODE >17:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7720 text3 CODE >18:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7732 text2 CODE >22:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7732 text2 CODE >23:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7736 text2 CODE >24:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+773A text2 CODE >25:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMotor.c
+7C38 text1 CODE >25:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C38 text1 CODE >27:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C3C text1 CODE >28:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C40 text1 CODE >29:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C44 text1 CODE >30:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C48 text1 CODE >33:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C5A text1 CODE >34:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C72 text1 CODE >35:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C84 text1 CODE >36:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7C9C text1 CODE >37:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7CAE text1 CODE >38:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7CC6 text1 CODE >39:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7CD8 text1 CODE >40:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7CF0 text1 CODE >41:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D02 text1 CODE >42:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D1A text1 CODE >44:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D20 text1 CODE >45:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D24 text1 CODE >53:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D24 text1 CODE >55:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D36 text1 CODE >56:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D48 text1 CODE >57:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D4C text1 CODE >62:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D5E text1 CODE >63:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D76 text1 CODE >64:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D7A text1 CODE >65:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D92 text1 CODE >66:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7D96 text1 CODE >67:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7DA8 text1 CODE >68:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7DB0 text1 CODE >60:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7DC2 text1 CODE >74:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7DD4 text1 CODE >76:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7DEA text1 CODE >79:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7DFC text1 CODE >80:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E14 text1 CODE >81:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E18 text1 CODE >82:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E30 text1 CODE >83:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E34 text1 CODE >84:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E46 text1 CODE >85:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E4E text1 CODE >77:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+7E64 text1 CODE >90:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\clsMenu.c
+772A text0 CODE >21:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
+772A text0 CODE >22:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
+772E text0 CODE >23:D:\Proyectos\Arquitectura\smartcurtain\MpLab\SmartCurtain.X\main.c
+78C4 cinit CODE >3489:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78C4 cinit CODE >3491:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78C4 cinit CODE >3494:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78C4 cinit CODE >3612:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78C6 cinit CODE >3613:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78C8 cinit CODE >3614:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78CA cinit CODE >3615:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78CC cinit CODE >3616:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78CE cinit CODE >3617:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78D0 cinit CODE >3618:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78D4 cinit CODE >3619:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78D8 cinit CODE >3620:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78D8 cinit CODE >3621:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78DA cinit CODE >3622:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78DE cinit CODE >3623:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78E0 cinit CODE >3624:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78E2 cinit CODE >3625:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78E4 cinit CODE >3629:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78E6 cinit CODE >3630:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78E8 cinit CODE >3631:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78EA cinit CODE >3632:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78EC cinit CODE >3633:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78EE cinit CODE >3634:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78F0 cinit CODE >3635:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78F4 cinit CODE >3636:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78F8 cinit CODE >3637:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78F8 cinit CODE >3638:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78FA cinit CODE >3639:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+78FE cinit CODE >3640:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7900 cinit CODE >3641:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7902 cinit CODE >3642:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7904 cinit CODE >3646:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7908 cinit CODE >3647:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+790A cinit CODE >3648:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+790A cinit CODE >3649:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+790C cinit CODE >3650:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+790E cinit CODE >3651:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7910 cinit CODE >3657:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7910 cinit CODE >3660:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7912 cinit CODE >3661:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7914 cinit CODE >3662:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
+7916 cinit CODE >3663:C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -93,44 +329,96 @@ $dist/default/production\SmartCurtain.X.production.o
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
+__size_of_despertador 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__end_of_motorApertura 7718 0 CODE 0 text5 dist/default/production\SmartCurtain.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\SmartCurtain.X.production.o
+__Lmediumconst 7E7C 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
 __Hspace_0 8000 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
-__Hspace_1 7 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__Hspace_1 6C 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hspace_2 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hspace_4 60000E 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\SmartCurtain.X.production.o
+__size_of_ledencendido 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__size_of_recuperarHoraBluetooth 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\SmartCurtain.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+__mediumconst 7E7C 0 MEDIUMCONST 0 mediumconst C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+__size_of_lederror 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\SmartCurtain.X.production.o
 __Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\SmartCurtain.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-_main 7F90 0 CODE 0 text0 dist/default/production\SmartCurtain.X.production.o
-start 0 0 CODE 0 init C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+_varMinutosD 18 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_Date A 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_LATB F8A 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_LATD F8C 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_RBPU 7F8F 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_RCIF 7CF5 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_TXIF 7CF4 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_Year 6 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+_hour E 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_main 772A 0 CODE 0 text0 dist/default/production\SmartCurtain.X.production.o
+_menu 7C38 0 CODE 0 text1 dist/default/production\SmartCurtain.X.production.o
+start 0 0 CODE 0 init C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
 __size_of_main 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
-_MSdelay 7FB6 0 CODE 0 text1 dist/default/production\SmartCurtain.X.production.o
+__size_of_menu 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+__end_of_ledencendido 7714 0 CODE 0 text6 dist/default/production\SmartCurtain.X.production.o
+_varAbierta 14 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\SmartCurtain.X.production.o
+LCD_Char@dat 32 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+_LCD_Char 7874 0 CODE 0 text15 dist/default/production\SmartCurtain.X.production.o
+_LCD_Init 77B0 0 CODE 0 text16 dist/default/production\SmartCurtain.X.production.o
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\SmartCurtain.X.production.o
-__accesstop 60 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-intlevel0 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-intlevel1 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-intlevel2 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-intlevel3 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\SmartCurtain.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+__end_of_LCD_Char 78C4 0 CODE 0 text15 dist/default/production\SmartCurtain.X.production.o
+__end_of_LCD_Init 77E4 0 CODE 0 text16 dist/default/production\SmartCurtain.X.production.o
+intlevel0 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+intlevel1 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+intlevel2 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+intlevel3 0 0 CODE 0 text C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\SmartCurtain.X.production.o
+__end_of_USART_ReceiveChar 7768 0 CODE 0 text12 dist/default/production\SmartCurtain.X.production.o
+_lederror 7768 0 CODE 0 text10 dist/default/production\SmartCurtain.X.production.o
 __Hifardata 0 0 CODE 0 ifardata dist/default/production\SmartCurtain.X.production.o
 __Hclrtext 0 0 ABS 0 clrtext dist/default/production\SmartCurtain.X.production.o
-MSdelay@varContador1 3 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
-MSdelay@varContador2 5 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+__pidataCOMRAM 7749 0 CODE 0 idataCOMRAM dist/default/production\SmartCurtain.X.production.o
+__end_of_lederror 7784 0 CODE 0 text10 dist/default/production\SmartCurtain.X.production.o
+_motorCierre 7718 0 CODE 0 text4 dist/default/production\SmartCurtain.X.production.o
+_varHoraAlarma 2A 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+_LCD_String 791A 0 CODE 0 text14 dist/default/production\SmartCurtain.X.production.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\SmartCurtain.X.production.o
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\SmartCurtain.X.production.o
-__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
+__Hmediumconst 8000 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
 __Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\SmartCurtain.X.production.o
+_varFechaAlarma 26 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\SmartCurtain.X.production.o
+_varFecha 20 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_varHoras 24 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_varTemp1 1E 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_varTemp2 1C 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\SmartCurtain.X.production.o
-start_initialization 7F8A 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+start_initialization 78C4 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
 _OSCCON FD3 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\SmartCurtain.X.production.o
-_TRISEbits F96 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_USART_ReceiveChar 7756 0 CODE 0 text12 dist/default/production\SmartCurtain.X.production.o
+_despertador 7978 0 CODE 0 text7 dist/default/production\SmartCurtain.X.production.o
+__end_of_LCD_String 7978 0 CODE 0 text14 dist/default/production\SmartCurtain.X.production.o
 ___rparam_used 1 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+__size_of_recuperarHorarioTeclado 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__end_of_LCD_Command 7874 0 CODE 0 text18 dist/default/production\SmartCurtain.X.production.o
+_varMinutosAlarma 28 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_TRISC6 7CA6 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_TRISC7 7CA7 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+LCD_String_xy@msg 36 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+LCD_String_xy@pos 35 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+LCD_String_xy@row 38 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+__end_of_LCD_Clear 772A 0 CODE 0 text17 dist/default/production\SmartCurtain.X.production.o
+_recuperarHoraBluetooth 7AB0 0 CODE 0 text8 dist/default/production\SmartCurtain.X.production.o
 __Hbank0 0 0 ABS 0 bank0 dist/default/production\SmartCurtain.X.production.o
 __Hbank1 0 0 ABS 0 bank1 dist/default/production\SmartCurtain.X.production.o
 __Hbank2 0 0 ABS 0 bank2 dist/default/production\SmartCurtain.X.production.o
@@ -143,17 +431,29 @@ __Hcinit 0 0 ABS 0 cinit dist/default/production\SmartCurtain.X.production.o
 __Hconst 0 0 CONST 0 const dist/default/production\SmartCurtain.X.production.o
 __Hidata 0 0 CODE 0 idata dist/default/production\SmartCurtain.X.production.o
 __Hidloc 200008 0 IDLOC 5 idloc dist/default/production\SmartCurtain.X.production.o
+__size_of_LCD_Clear 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\SmartCurtain.X.production.o
 __Hparam 0 0 COMRAM 1 rparam dist/default/production\SmartCurtain.X.production.o
 __Hrdata 0 0 COMRAM 1 rdata dist/default/production\SmartCurtain.X.production.o
 __Hstack 0 0 STACK 2 stack dist/default/production\SmartCurtain.X.production.o
 __Htext0 0 0 ABS 0 text0 dist/default/production\SmartCurtain.X.production.o
 __Htext1 0 0 ABS 0 text1 dist/default/production\SmartCurtain.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\SmartCurtain.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\SmartCurtain.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\SmartCurtain.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\SmartCurtain.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\SmartCurtain.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\SmartCurtain.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\SmartCurtain.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\SmartCurtain.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\SmartCurtain.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\SmartCurtain.X.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+_LCD_String_xy 77E4 0 CODE 0 text13 dist/default/production\SmartCurtain.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\SmartCurtain.X.production.o
 __Hconfig 30000E 0 CONFIG 4 config dist/default/production\SmartCurtain.X.production.o
+_Keypad_Key_Press 79FA 0 CODE 0 text19 dist/default/production\SmartCurtain.X.production.o
+__end_ofKeypad_Key_Press@F3196 7E8E 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
 __Lbank0 0 0 ABS 0 bank0 dist/default/production\SmartCurtain.X.production.o
 __Lbank1 0 0 ABS 0 bank1 dist/default/production\SmartCurtain.X.production.o
 __Lbank2 0 0 ABS 0 bank2 dist/default/production\SmartCurtain.X.production.o
@@ -172,8 +472,20 @@ __Lrdata 0 0 COMRAM 1 rdata dist/default/production\SmartCurtain.X.production.o
 __Lstack 0 0 STACK 2 stack dist/default/production\SmartCurtain.X.production.o
 __Ltext0 0 0 ABS 0 text0 dist/default/production\SmartCurtain.X.production.o
 __Ltext1 0 0 ABS 0 text1 dist/default/production\SmartCurtain.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\SmartCurtain.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\SmartCurtain.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\SmartCurtain.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\SmartCurtain.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\SmartCurtain.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\SmartCurtain.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\SmartCurtain.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\SmartCurtain.X.production.o
 __Hfarbss 0 0 FARRAM 0 farbss dist/default/production\SmartCurtain.X.production.o
+_LCD_Clear 7722 0 CODE 0 text17 dist/default/production\SmartCurtain.X.production.o
 __Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\SmartCurtain.X.production.o
+_PORTAbits F80 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Habs1 0 0 ABS 0 abs1 dist/default/production\SmartCurtain.X.production.o
 __Hdata 0 0 ABS 0 data dist/default/production\SmartCurtain.X.production.o
 __Hinit 4 0 CODE 0 init dist/default/production\SmartCurtain.X.production.o
@@ -191,61 +503,161 @@ __Ltext 0 0 ABS 0 text dist/default/production\SmartCurtain.X.production.o
 __HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Hintret 0 0 ABS 0 intret dist/default/production\SmartCurtain.X.production.o
 __Hirdata 0 0 CODE 0 irdata dist/default/production\SmartCurtain.X.production.o
+_Day C 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __S0 8000 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
-__S1 7 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__S1 6C 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __S2 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __S4 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __S5 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_idx 2C 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_min 10 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_sec 12 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+Keypad_Key_Press@F3196 7E7D 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
+Keypad_Key_Press@keypad_deco 31 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\SmartCurtain.X.production.o
+main_rtc@F3525 48 0 COMRAM 1 dataCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\SmartCurtain.X.production.o
-__size_of_MSdelay 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_ledActivador 7784 0 CODE 0 text11 dist/default/production\SmartCurtain.X.production.o
 __Lintentry 0 0 ABS 0 intentry dist/default/production\SmartCurtain.X.production.o
 __Hramtop 800 0 RAM 0 ramtop dist/default/production\SmartCurtain.X.production.o
 __Hrparam 0 0 COMRAM 1 rparam dist/default/production\SmartCurtain.X.production.o
-MSdelay@prmTiempo 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
-__activetblptr 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+Keypad_Key_Press@tec 42 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+__pdataBANK0 60 0 BANK0 1 dataBANK0 dist/default/production\SmartCurtain.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hstruct 0 0 COMRAM 1 struct dist/default/production\SmartCurtain.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\SmartCurtain.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\SmartCurtain.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\SmartCurtain.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\SmartCurtain.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\SmartCurtain.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\SmartCurtain.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\SmartCurtain.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\SmartCurtain.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\SmartCurtain.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\SmartCurtain.X.production.o
+_keypad 60 0 BANK0 1 dataBANK0 dist/default/production\SmartCurtain.X.production.o
+__end_of_motorCierre 771C 0 CODE 0 text4 dist/default/production\SmartCurtain.X.production.o
+__ptext10 7768 0 CODE 0 text10 dist/default/production\SmartCurtain.X.production.o
+__ptext11 7784 0 CODE 0 text11 dist/default/production\SmartCurtain.X.production.o
+__ptext12 7756 0 CODE 0 text12 dist/default/production\SmartCurtain.X.production.o
+__ptext13 77E4 0 CODE 0 text13 dist/default/production\SmartCurtain.X.production.o
+__ptext14 791A 0 CODE 0 text14 dist/default/production\SmartCurtain.X.production.o
+__ptext15 7874 0 CODE 0 text15 dist/default/production\SmartCurtain.X.production.o
+__ptext16 77B0 0 CODE 0 text16 dist/default/production\SmartCurtain.X.production.o
+__ptext17 7722 0 CODE 0 text17 dist/default/production\SmartCurtain.X.production.o
+__ptext18 7824 0 CODE 0 text18 dist/default/production\SmartCurtain.X.production.o
+__ptext19 79FA 0 CODE 0 text19 dist/default/production\SmartCurtain.X.production.o
+__end_of_motorStop 7722 0 CODE 0 text3 dist/default/production\SmartCurtain.X.production.o
+__end_of_motor_ini 773C 0 CODE 0 text2 dist/default/production\SmartCurtain.X.production.o
+__end_of_Keypad_Key_Press 7AB0 0 CODE 0 text19 dist/default/production\SmartCurtain.X.production.o
+__size_of_LCD_String_xy 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_temp_col 2D 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\SmartCurtain.X.production.o
 __Lbigram 0 0 ABS 0 bigram dist/default/production\SmartCurtain.X.production.o
+__size_of_motorStop 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__size_of_motor_ini 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lcomram 0 0 ABS 0 comram dist/default/production\SmartCurtain.X.production.o
 __Lconfig 0 0 CONFIG 4 config dist/default/production\SmartCurtain.X.production.o
+__size_of_ledActivador 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__size_of_LCD_Command 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__size_of_Keypad_Key_Press 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+LCD_String_xy@location 39 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+_rowloc 2E 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+__size_of_LCD_String 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\SmartCurtain.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\SmartCurtain.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-stackhi 7FF 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
-stacklo 60 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+isa$std 1 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+_motorStop 771C 0 CODE 0 text3 dist/default/production\SmartCurtain.X.production.o
+_motor_ini 7732 0 CODE 0 text2 dist/default/production\SmartCurtain.X.production.o
+stackhi 7FF 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+stacklo 6C 0 ABS 0 - C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
+_varAux 30 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Lintcode 0 0 CODE 0 intcode dist/default/production\SmartCurtain.X.production.o
 __Lintret 0 0 ABS 0 intret dist/default/production\SmartCurtain.X.production.o
 __Lirdata 0 0 CODE 0 irdata dist/default/production\SmartCurtain.X.production.o
+__end_of_ledActivador 77B0 0 CODE 0 text11 dist/default/production\SmartCurtain.X.production.o
+__end_of_LCD_String_xy 7824 0 CODE 0 text13 dist/default/production\SmartCurtain.X.production.o
 __Lspace_0 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lspace_1 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lspace_2 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lspace_4 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__end_of_recuperarHoraBluetooth 7C38 0 CODE 0 text8 dist/default/production\SmartCurtain.X.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+Keypad_Key_Press@fila 44 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
 __LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
-end_of_initialization 7F8A 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
-__end_of_MSdelay 8000 0 CODE 0 text1 dist/default/production\SmartCurtain.X.production.o
+_motorApertura 7714 0 CODE 0 text5 dist/default/production\SmartCurtain.X.production.o
+end_of_initialization 7910 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+__end_of_despertador 79FA 0 CODE 0 text7 dist/default/production\SmartCurtain.X.production.o
 __Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\SmartCurtain.X.production.o
 __Hintentry 0 0 ABS 0 intentry dist/default/production\SmartCurtain.X.production.o
 __Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\SmartCurtain.X.production.o
+_varMinutos 22 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Lramtop 800 0 RAM 0 ramtop dist/default/production\SmartCurtain.X.production.o
 __Lrparam 0 0 COMRAM 1 rparam dist/default/production\SmartCurtain.X.production.o
-__pcinit 7F8A 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
-__ptext0 7F90 0 CODE 0 text0 dist/default/production\SmartCurtain.X.production.o
-__ptext1 7FB6 0 CODE 0 text1 dist/default/production\SmartCurtain.X.production.o
+__pcinit 78C4 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+__ptext0 772A 0 CODE 0 text0 dist/default/production\SmartCurtain.X.production.o
+__ptext1 7C38 0 CODE 0 text1 dist/default/production\SmartCurtain.X.production.o
+__ptext2 7732 0 CODE 0 text2 dist/default/production\SmartCurtain.X.production.o
+__ptext3 771C 0 CODE 0 text3 dist/default/production\SmartCurtain.X.production.o
+__ptext4 7718 0 CODE 0 text4 dist/default/production\SmartCurtain.X.production.o
+__ptext5 7714 0 CODE 0 text5 dist/default/production\SmartCurtain.X.production.o
+__ptext6 7710 0 CODE 0 text6 dist/default/production\SmartCurtain.X.production.o
+__ptext7 7978 0 CODE 0 text7 dist/default/production\SmartCurtain.X.production.o
+__ptext8 7AB0 0 CODE 0 text8 dist/default/production\SmartCurtain.X.production.o
+__ptext9 770E 0 CODE 0 text9 dist/default/production\SmartCurtain.X.production.o
 __Lstruct 0 0 COMRAM 1 struct dist/default/production\SmartCurtain.X.production.o
-__ramtop 800 0 RAM 0 ramtop C:\Users\OSCARH~1\AppData\Local\Temp\xcAso3s.o
+_password 4F 0 COMRAM 1 dataCOMRAM dist/default/production\SmartCurtain.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\SmartCurtain.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\SmartCurtain.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\SmartCurtain.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\SmartCurtain.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\SmartCurtain.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\SmartCurtain.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\SmartCurtain.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\SmartCurtain.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\SmartCurtain.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\SmartCurtain.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\OSCARH~1\AppData\Local\Temp\xcAs7ro.o
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\SmartCurtain.X.production.o
 __Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\SmartCurtain.X.production.o
+LCD_String@msg 33 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\SmartCurtain.X.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\SmartCurtain.X.production.o
-__end_of__initialization 7F8A 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+__end_of__initialization 7910 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+_pass_user 1 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Libigdata 0 0 CODE 0 ibigdata dist/default/production\SmartCurtain.X.production.o
+__pidataBANK0 773D 0 CODE 0 idataBANK0 dist/default/production\SmartCurtain.X.production.o
+_recuperarHorarioTeclado 770E 0 CODE 0 text9 dist/default/production\SmartCurtain.X.production.o
+__size_of_motorCierre 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lclrtext 0 0 ABS 0 clrtext dist/default/production\SmartCurtain.X.production.o
-__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
-__end_of_main 7FB6 0 CODE 0 text0 dist/default/production\SmartCurtain.X.production.o
+_varFechaD 16 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+__end_of_recuperarHorarioTeclado 7710 0 CODE 0 text9 dist/default/production\SmartCurtain.X.production.o
+LCD_Command@cmd 32 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+__pcstackCOMRAM 31 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+ledActivador@prmEstado 31 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+_varHorasD 1A 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+__pmediumconst 7E7C 0 MEDIUMCONST 0 mediumconst dist/default/production\SmartCurtain.X.production.o
+lederror@prmEstado 31 0 COMRAM 1 cstackCOMRAM dist/default/production\SmartCurtain.X.production.o
+__end_of_main 7732 0 CODE 0 text0 dist/default/production\SmartCurtain.X.production.o
+__end_of_menu 7E7C 0 CODE 0 text1 dist/default/production\SmartCurtain.X.production.o
+__size_of_USART_ReceiveChar 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_LATB2 7C52 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_LATB3 7C53 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_Month 8 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_PORTD F83 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_ledencendido 7710 0 CODE 0 text6 dist/default/production\SmartCurtain.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_RCSTA FAB 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 _TRISB F93 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
-_TRISE F96 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_TRISD F95 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+_TXSTA FAC 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __HRAM 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hbss 0 0 RAM 1 bss dist/default/production\SmartCurtain.X.production.o
 __Hram 0 0 ABS 0 ram dist/default/production\SmartCurtain.X.production.o
@@ -254,10 +666,18 @@ __LRAM 1 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Lbss 0 0 RAM 1 bss dist/default/production\SmartCurtain.X.production.o
 __Lram 0 0 ABS 0 ram dist/default/production\SmartCurtain.X.production.o
 __Lsfr 0 0 ABS 0 sfr dist/default/production\SmartCurtain.X.production.o
-__initialization 7F8A 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+__size_of_motorApertura 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\SmartCurtain.X.production.o
+_varOpcion 54 0 COMRAM 1 dataCOMRAM dist/default/production\SmartCurtain.X.production.o
+__initialization 78C4 0 CODE 0 cinit dist/default/production\SmartCurtain.X.production.o
+__pdataCOMRAM 48 0 COMRAM 1 dataCOMRAM dist/default/production\SmartCurtain.X.production.o
+_LCD_Command 7824 0 CODE 0 text18 dist/default/production\SmartCurtain.X.production.o
+_col_loc 2F 0 COMRAM 1 bssCOMRAM dist/default/production\SmartCurtain.X.production.o
 __Hfardata 0 0 FARRAM 0 fardata dist/default/production\SmartCurtain.X.production.o
 __Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\SmartCurtain.X.production.o
 __Lifardata 0 0 CODE 0 ifardata dist/default/production\SmartCurtain.X.production.o
+__size_of_LCD_Char 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
+__size_of_LCD_Init 0 0 ABS 0 - dist/default/production\SmartCurtain.X.production.o
 __Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\SmartCurtain.X.production.o
 __Hintcode 0 0 CODE 0 intcode dist/default/production\SmartCurtain.X.production.o
 # %SPLITSTAB Section
@@ -284,11 +704,33 @@ __Hintcode 0 0 CODE 0 intcode dist/default/production\SmartCurtain.X.production.
 # and size are in units of delta. The file address is in units of bytes.
 # All other numeric quantities are in decimal.
 %SEGMENTS
-cinit 0 7F8A 7F8A 6 1
-text0 0 7F90 7F90 26 1
-text1 0 7FB6 7FB6 4A 1
-cstackCOMRAM 1 1 1 6 1
+cinit 0 78C4 78C4 56 1
+text0 0 772A 772A 8 1
+text1 0 7C38 7C38 244 1
+text2 0 7732 7732 A 1
+text3 0 771C 771C 6 1
+text4 0 7718 7718 4 1
+text5 0 7714 7714 4 1
+text6 0 7710 7710 4 1
+text7 0 7978 7978 82 1
+text8 0 7AB0 7AB0 188 1
+text9 0 770E 770E 2 1
+text10 0 7768 7768 1C 1
+text11 0 7784 7784 2C 1
+text12 0 7756 7756 12 1
+text13 0 77E4 77E4 40 1
+text14 0 791A 791A 5E 1
+text15 0 7874 7874 50 1
+text16 0 77B0 77B0 34 1
+text17 0 7722 7722 8 1
+text18 0 7824 7824 50 1
+text19 0 79FA 79FA B6 1
+idataCOMRAM 0 7749 7749 D 1
 reset_vec 0 0 0 4 1
+idataBANK0 0 773D 773D C 1
+dataBANK0 1 60 60 C 1
+bssCOMRAM 1 1 1 54 1
+mediumconst 0 7E7C 7E7C 184 1
 # %NOTES Section
 # This section contains data of all the note-psects.  The beginning of the section
 # is indicated by %NOTES. The first line indicates the name and decimal

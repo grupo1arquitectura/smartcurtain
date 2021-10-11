@@ -3,10 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/main.c</file>
-            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/pinout.h</file>
-            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/utils.h</file>
-            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/config.h</file>
+            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/clsLcd.c</file>
+            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/clsMenu.c</file>
+            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/clsAlarmas.c</file>
+            <file>file:/D:/Proyectos/Arquitectura/smartcurtain/MpLab/SmartCurtain.X/clsMotor.c</file>
         </group>
     </open-files>
 </project-private>

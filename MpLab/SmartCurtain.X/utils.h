@@ -17,8 +17,28 @@ extern "C" {
      * char = 8 bits (-127 a +127)
      * int = 16 bits
      */
-    void MSdelay(unsigned int);
+    #include "lcd.h"
 
+
+    void despertador();
+    
+    //Funciones motor
+    void motorApertura();
+    void motorCierre();
+    void motor_ini();
+    void motorStop();
+    //Teclado
+    char keypad_ini();
+    unsigned char Keypad_Key_Press();
+    //Bluetooth
+    void USART_Init();
+    char USART_ReceiveChar();
+    //Despertador
+    int varHoraAlarma = 0;
+    int varMinutosAlarma = 0;
+    int varFechaAlarma = 0;
+    //RTC
+    int int RTC_get(int prmOpcion);
 
 #ifdef	__cplusplus
 }

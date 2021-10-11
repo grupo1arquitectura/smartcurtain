@@ -1,0 +1,833 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"21 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 21: char I2C_Start(char);
+[v _I2C_Start `(uc ~T0 @X0 0 ef1`uc ]
+"26
+[; ;./I2C_Master_File.h: 26: char I2C_Write(unsigned char);
+[v _I2C_Write `(uc ~T0 @X0 0 ef1`uc ]
+"24
+[; ;./I2C_Master_File.h: 24: char I2C_Repeated_Start(char);
+[v _I2C_Repeated_Start `(uc ~T0 @X0 0 ef1`uc ]
+"29
+[; ;./I2C_Master_File.h: 29: char I2C_Read(char flag);
+[v _I2C_Read `(uc ~T0 @X0 0 ef1`uc ]
+"25
+[; ;./I2C_Master_File.h: 25: char I2C_Stop();
+[v _I2C_Stop `(uc ~T0 @X0 0 e? ]
+"7986 D:/X64/Mplab/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\PIC18F4550.h
+[v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
+"20 ./I2C_Master_File.h
+[; ;./I2C_Master_File.h: 20: void I2C_Init();
+[v _I2C_Init `(v ~T0 @X0 0 e? ]
+"24 ./lcd.h
+[; ;./lcd.h: 24:     void LCD_Init();
+[v _LCD_Init `(v ~T0 @X0 0 e? ]
+"29
+[; ;./lcd.h: 29:     void LCD_Clear();
+[v _LCD_Clear `(v ~T0 @X0 0 e? ]
+[v F3470 `(v ~T0 @X0 1 tf1`ul ]
+"203 D:/X64/Mplab/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\pic18.h
+[v __delay `JF3470 ~T0 @X0 0 e ]
+[p i __delay ]
+"28 ./lcd.h
+[; ;./lcd.h: 28:     void LCD_String_xy(char,char,const char *);
+[v _LCD_String_xy `(v ~T0 @X0 0 ef3`uc`uc`*Cuc ]
+"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"27 ./lcd.h
+[; ;./lcd.h: 27:     void LCD_String(const char *);
+[v _LCD_String `(v ~T0 @X0 0 ef1`*Cuc ]
+"54 D:/X64/Mplab/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\PIC18F4550.h
+[; <" SPPDATA equ 0F62h ;# ">
+"74
+[; <" SPPCFG equ 0F63h ;# ">
+"151
+[; <" SPPEPS equ 0F64h ;# ">
+"225
+[; <" SPPCON equ 0F65h ;# ">
+"251
+[; <" UFRM equ 0F66h ;# ">
+"258
+[; <" UFRML equ 0F66h ;# ">
+"336
+[; <" UFRMH equ 0F67h ;# ">
+"376
+[; <" UIR equ 0F68h ;# ">
+"432
+[; <" UIE equ 0F69h ;# ">
+"488
+[; <" UEIR equ 0F6Ah ;# ">
+"539
+[; <" UEIE equ 0F6Bh ;# ">
+"590
+[; <" USTAT equ 0F6Ch ;# ">
+"650
+[; <" UCON equ 0F6Dh ;# ">
+"701
+[; <" UADDR equ 0F6Eh ;# ">
+"765
+[; <" UCFG equ 0F6Fh ;# ">
+"844
+[; <" UEP0 equ 0F70h ;# ">
+"952
+[; <" UEP1 equ 0F71h ;# ">
+"1060
+[; <" UEP2 equ 0F72h ;# ">
+"1168
+[; <" UEP3 equ 0F73h ;# ">
+"1276
+[; <" UEP4 equ 0F74h ;# ">
+"1384
+[; <" UEP5 equ 0F75h ;# ">
+"1492
+[; <" UEP6 equ 0F76h ;# ">
+"1600
+[; <" UEP7 equ 0F77h ;# ">
+"1708
+[; <" UEP8 equ 0F78h ;# ">
+"1784
+[; <" UEP9 equ 0F79h ;# ">
+"1860
+[; <" UEP10 equ 0F7Ah ;# ">
+"1936
+[; <" UEP11 equ 0F7Bh ;# ">
+"2012
+[; <" UEP12 equ 0F7Ch ;# ">
+"2088
+[; <" UEP13 equ 0F7Dh ;# ">
+"2164
+[; <" UEP14 equ 0F7Eh ;# ">
+"2240
+[; <" UEP15 equ 0F7Fh ;# ">
+"2316
+[; <" PORTA equ 0F80h ;# ">
+"2455
+[; <" PORTB equ 0F81h ;# ">
+"2565
+[; <" PORTC equ 0F82h ;# ">
+"2707
+[; <" PORTD equ 0F83h ;# ">
+"2828
+[; <" PORTE equ 0F84h ;# ">
+"2975
+[; <" LATA equ 0F89h ;# ">
+"3075
+[; <" LATB equ 0F8Ah ;# ">
+"3187
+[; <" LATC equ 0F8Bh ;# ">
+"3265
+[; <" LATD equ 0F8Ch ;# ">
+"3377
+[; <" LATE equ 0F8Dh ;# ">
+"3429
+[; <" TRISA equ 0F92h ;# ">
+"3434
+[; <" DDRA equ 0F92h ;# ">
+"3627
+[; <" TRISB equ 0F93h ;# ">
+"3632
+[; <" DDRB equ 0F93h ;# ">
+"3849
+[; <" TRISC equ 0F94h ;# ">
+"3854
+[; <" DDRC equ 0F94h ;# ">
+"4003
+[; <" TRISD equ 0F95h ;# ">
+"4008
+[; <" DDRD equ 0F95h ;# ">
+"4225
+[; <" TRISE equ 0F96h ;# ">
+"4230
+[; <" DDRE equ 0F96h ;# ">
+"4327
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4386
+[; <" PIE1 equ 0F9Dh ;# ">
+"4470
+[; <" PIR1 equ 0F9Eh ;# ">
+"4554
+[; <" IPR1 equ 0F9Fh ;# ">
+"4638
+[; <" PIE2 equ 0FA0h ;# ">
+"4709
+[; <" PIR2 equ 0FA1h ;# ">
+"4780
+[; <" IPR2 equ 0FA2h ;# ">
+"4851
+[; <" EECON1 equ 0FA6h ;# ">
+"4917
+[; <" EECON2 equ 0FA7h ;# ">
+"4924
+[; <" EEDATA equ 0FA8h ;# ">
+"4931
+[; <" EEADR equ 0FA9h ;# ">
+"4938
+[; <" RCSTA equ 0FABh ;# ">
+"4943
+[; <" RCSTA1 equ 0FABh ;# ">
+"5148
+[; <" TXSTA equ 0FACh ;# ">
+"5153
+[; <" TXSTA1 equ 0FACh ;# ">
+"5404
+[; <" TXREG equ 0FADh ;# ">
+"5409
+[; <" TXREG1 equ 0FADh ;# ">
+"5416
+[; <" RCREG equ 0FAEh ;# ">
+"5421
+[; <" RCREG1 equ 0FAEh ;# ">
+"5428
+[; <" SPBRG equ 0FAFh ;# ">
+"5433
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5440
+[; <" SPBRGH equ 0FB0h ;# ">
+"5447
+[; <" T3CON equ 0FB1h ;# ">
+"5568
+[; <" TMR3 equ 0FB2h ;# ">
+"5575
+[; <" TMR3L equ 0FB2h ;# ">
+"5582
+[; <" TMR3H equ 0FB3h ;# ">
+"5589
+[; <" CMCON equ 0FB4h ;# ">
+"5679
+[; <" CVRCON equ 0FB5h ;# ">
+"5764
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5769
+[; <" CCP1AS equ 0FB6h ;# ">
+"5926
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5931
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6064
+[; <" BAUDCON equ 0FB8h ;# ">
+"6069
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6244
+[; <" CCP2CON equ 0FBAh ;# ">
+"6308
+[; <" CCPR2 equ 0FBBh ;# ">
+"6315
+[; <" CCPR2L equ 0FBBh ;# ">
+"6322
+[; <" CCPR2H equ 0FBCh ;# ">
+"6329
+[; <" CCP1CON equ 0FBDh ;# ">
+"6334
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6491
+[; <" CCPR1 equ 0FBEh ;# ">
+"6498
+[; <" CCPR1L equ 0FBEh ;# ">
+"6505
+[; <" CCPR1H equ 0FBFh ;# ">
+"6512
+[; <" ADCON2 equ 0FC0h ;# ">
+"6583
+[; <" ADCON1 equ 0FC1h ;# ">
+"6668
+[; <" ADCON0 equ 0FC2h ;# ">
+"6787
+[; <" ADRES equ 0FC3h ;# ">
+"6794
+[; <" ADRESL equ 0FC3h ;# ">
+"6801
+[; <" ADRESH equ 0FC4h ;# ">
+"6808
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6870
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6940
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7188
+[; <" SSPADD equ 0FC8h ;# ">
+"7195
+[; <" SSPBUF equ 0FC9h ;# ">
+"7202
+[; <" T2CON equ 0FCAh ;# ">
+"7300
+[; <" PR2 equ 0FCBh ;# ">
+"7305
+[; <" MEMCON equ 0FCBh ;# ">
+"7410
+[; <" TMR2 equ 0FCCh ;# ">
+"7417
+[; <" T1CON equ 0FCDh ;# ">
+"7520
+[; <" TMR1 equ 0FCEh ;# ">
+"7527
+[; <" TMR1L equ 0FCEh ;# ">
+"7534
+[; <" TMR1H equ 0FCFh ;# ">
+"7541
+[; <" RCON equ 0FD0h ;# ">
+"7690
+[; <" WDTCON equ 0FD1h ;# ">
+"7718
+[; <" HLVDCON equ 0FD2h ;# ">
+"7723
+[; <" LVDCON equ 0FD2h ;# ">
+"7988
+[; <" OSCCON equ 0FD3h ;# ">
+"8071
+[; <" T0CON equ 0FD5h ;# ">
+"8141
+[; <" TMR0 equ 0FD6h ;# ">
+"8148
+[; <" TMR0L equ 0FD6h ;# ">
+"8155
+[; <" TMR0H equ 0FD7h ;# ">
+"8162
+[; <" STATUS equ 0FD8h ;# ">
+"8233
+[; <" FSR2 equ 0FD9h ;# ">
+"8240
+[; <" FSR2L equ 0FD9h ;# ">
+"8247
+[; <" FSR2H equ 0FDAh ;# ">
+"8254
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8261
+[; <" PREINC2 equ 0FDCh ;# ">
+"8268
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8275
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8282
+[; <" INDF2 equ 0FDFh ;# ">
+"8289
+[; <" BSR equ 0FE0h ;# ">
+"8296
+[; <" FSR1 equ 0FE1h ;# ">
+"8303
+[; <" FSR1L equ 0FE1h ;# ">
+"8310
+[; <" FSR1H equ 0FE2h ;# ">
+"8317
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8324
+[; <" PREINC1 equ 0FE4h ;# ">
+"8331
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8338
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8345
+[; <" INDF1 equ 0FE7h ;# ">
+"8352
+[; <" WREG equ 0FE8h ;# ">
+"8359
+[; <" FSR0 equ 0FE9h ;# ">
+"8366
+[; <" FSR0L equ 0FE9h ;# ">
+"8373
+[; <" FSR0H equ 0FEAh ;# ">
+"8380
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8387
+[; <" PREINC0 equ 0FECh ;# ">
+"8394
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8401
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8408
+[; <" INDF0 equ 0FEFh ;# ">
+"8415
+[; <" INTCON3 equ 0FF0h ;# ">
+"8507
+[; <" INTCON2 equ 0FF1h ;# ">
+"8584
+[; <" INTCON equ 0FF2h ;# ">
+"8701
+[; <" PROD equ 0FF3h ;# ">
+"8708
+[; <" PRODL equ 0FF3h ;# ">
+"8715
+[; <" PRODH equ 0FF4h ;# ">
+"8722
+[; <" TABLAT equ 0FF5h ;# ">
+"8731
+[; <" TBLPTR equ 0FF6h ;# ">
+"8738
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8745
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8752
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8761
+[; <" PCLAT equ 0FF9h ;# ">
+"8768
+[; <" PC equ 0FF9h ;# ">
+"8775
+[; <" PCL equ 0FF9h ;# ">
+"8782
+[; <" PCLATH equ 0FFAh ;# ">
+"8789
+[; <" PCLATU equ 0FFBh ;# ">
+"8796
+[; <" STKPTR equ 0FFCh ;# ">
+"8872
+[; <" TOS equ 0FFDh ;# ">
+"8879
+[; <" TOSL equ 0FFDh ;# ">
+"8886
+[; <" TOSH equ 0FFEh ;# ">
+"8893
+[; <" TOSU equ 0FFFh ;# ">
+"18 ./config.h
+[p x PLLDIV  =  1        ]
+"19
+[p x CPUDIV  =  OSC1_PLL2 ]
+"20
+[p x USBDIV  =  1        ]
+"23
+[p x FOSC  =  INTOSC_EC  ]
+"24
+[p x FCMEN  =  OFF       ]
+"25
+[p x IESO  =  OFF        ]
+"28
+[p x PWRT  =  OFF        ]
+"29
+[p x BOR  =  ON          ]
+"30
+[p x BORV  =  3          ]
+"31
+[p x VREGEN  =  OFF      ]
+"34
+[p x WDT  =  OFF         ]
+"35
+[p x WDTPS  =  32768     ]
+"38
+[p x CCP2MX  =  ON       ]
+"39
+[p x PBADEN  =  OFF       ]
+"40
+[p x LPT1OSC  =  OFF     ]
+"41
+[p x MCLRE  =  ON       ]
+"44
+[p x STVREN  =  ON       ]
+"45
+[p x LVP  =  OFF          ]
+"46
+[p x ICPRT  =  OFF       ]
+"47
+[p x XINST  =  OFF       ]
+"50
+[p x CP0  =  OFF         ]
+"51
+[p x CP1  =  OFF         ]
+"52
+[p x CP2  =  OFF         ]
+"53
+[p x CP3  =  OFF         ]
+"56
+[p x CPB  =  OFF         ]
+"57
+[p x CPD  =  OFF         ]
+"60
+[p x WRT0  =  OFF        ]
+"61
+[p x WRT1  =  OFF        ]
+"62
+[p x WRT2  =  OFF        ]
+"63
+[p x WRT3  =  OFF        ]
+"66
+[p x WRTC  =  OFF        ]
+"67
+[p x WRTB  =  OFF        ]
+"68
+[p x WRTD  =  OFF        ]
+"71
+[p x EBTR0  =  OFF       ]
+"72
+[p x EBTR1  =  OFF       ]
+"73
+[p x EBTR2  =  OFF       ]
+"74
+[p x EBTR3  =  OFF       ]
+"77
+[p x EBTRB  =  OFF       ]
+"11 clsRTC.c
+[; ;clsRTC.c: 11: int sec,min,hour;
+[v _sec `i ~T0 @X0 1 e ]
+[v _min `i ~T0 @X0 1 e ]
+[v _hour `i ~T0 @X0 1 e ]
+"12
+[; ;clsRTC.c: 12: int Day,Date,Month,Year;
+[v _Day `i ~T0 @X0 1 e ]
+[v _Date `i ~T0 @X0 1 e ]
+[v _Month `i ~T0 @X0 1 e ]
+[v _Year `i ~T0 @X0 1 e ]
+"14
+[; ;clsRTC.c: 14: void RTC_Read_Clock(char read_clock_address)
+[v _RTC_Read_Clock `(v ~T0 @X0 1 ef1`uc ]
+"15
+[; ;clsRTC.c: 15: {
+{
+[e :U _RTC_Read_Clock ]
+"14
+[; ;clsRTC.c: 14: void RTC_Read_Clock(char read_clock_address)
+[v _read_clock_address `uc ~T0 @X0 1 r1 ]
+"15
+[; ;clsRTC.c: 15: {
+[f ]
+"16
+[; ;clsRTC.c: 16:     I2C_Start(0xD0);
+[e ( _I2C_Start (1 -> -> 208 `i `uc ]
+"17
+[; ;clsRTC.c: 17:     I2C_Write(read_clock_address);
+[e ( _I2C_Write (1 -> _read_clock_address `uc ]
+"18
+[; ;clsRTC.c: 18:     I2C_Repeated_Start(0xD1);
+[e ( _I2C_Repeated_Start (1 -> -> 209 `i `uc ]
+"19
+[; ;clsRTC.c: 19:     sec = I2C_Read(0);
+[e = _sec -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"20
+[; ;clsRTC.c: 20:     min = I2C_Read(0);
+[e = _min -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"21
+[; ;clsRTC.c: 21:     hour= I2C_Read(1);
+[e = _hour -> ( _I2C_Read (1 -> -> 1 `i `uc `i ]
+"23
+[; ;clsRTC.c: 23: }
+[e :UE 369 ]
+}
+"25
+[; ;clsRTC.c: 25: void RTC_Read_Calendar(char read_calendar_address)
+[v _RTC_Read_Calendar `(v ~T0 @X0 1 ef1`uc ]
+"26
+[; ;clsRTC.c: 26: {
+{
+[e :U _RTC_Read_Calendar ]
+"25
+[; ;clsRTC.c: 25: void RTC_Read_Calendar(char read_calendar_address)
+[v _read_calendar_address `uc ~T0 @X0 1 r1 ]
+"26
+[; ;clsRTC.c: 26: {
+[f ]
+"27
+[; ;clsRTC.c: 27:     I2C_Start(0xD0);
+[e ( _I2C_Start (1 -> -> 208 `i `uc ]
+"28
+[; ;clsRTC.c: 28:     I2C_Write(read_calendar_address);
+[e ( _I2C_Write (1 -> _read_calendar_address `uc ]
+"29
+[; ;clsRTC.c: 29:     I2C_Repeated_Start(0xD1);
+[e ( _I2C_Repeated_Start (1 -> -> 209 `i `uc ]
+"30
+[; ;clsRTC.c: 30:     Day = I2C_Read(0);
+[e = _Day -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"31
+[; ;clsRTC.c: 31:     Date = I2C_Read(0);
+[e = _Date -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"32
+[; ;clsRTC.c: 32:     Month = I2C_Read(0);
+[e = _Month -> ( _I2C_Read (1 -> -> 0 `i `uc `i ]
+"33
+[; ;clsRTC.c: 33:     Year = I2C_Read(1);
+[e = _Year -> ( _I2C_Read (1 -> -> 1 `i `uc `i ]
+"34
+[; ;clsRTC.c: 34:     I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"35
+[; ;clsRTC.c: 35: }
+[e :UE 370 ]
+}
+"37
+[; ;clsRTC.c: 37: void main_rtc()
+[v _main_rtc `(v ~T0 @X0 1 ef ]
+"38
+[; ;clsRTC.c: 38: {
+{
+[e :U _main_rtc ]
+[f ]
+"40
+[; ;clsRTC.c: 40:     char secs[10],mins[10],hours[10];
+[v _secs `uc ~T0 @X0 -> 10 `i a ]
+[v _mins `uc ~T0 @X0 -> 10 `i a ]
+[v _hours `uc ~T0 @X0 -> 10 `i a ]
+"41
+[; ;clsRTC.c: 41:     char date[10],month[10],year[10];
+[v _date `uc ~T0 @X0 -> 10 `i a ]
+[v _month `uc ~T0 @X0 -> 10 `i a ]
+[v _year `uc ~T0 @X0 -> 10 `i a ]
+"42
+[; ;clsRTC.c: 42:     char Clock_type = 0x06;
+[v _Clock_type `uc ~T0 @X0 1 a ]
+[e = _Clock_type -> -> 6 `i `uc ]
+"43
+[; ;clsRTC.c: 43:     char AM_PM = 0x05;
+[v _AM_PM `uc ~T0 @X0 1 a ]
+[e = _AM_PM -> -> 5 `i `uc ]
+[v F3525 `uc ~T0 @X0 -> 7 `i s ]
+[i F3525
+:U ..
+"44
+[; ;clsRTC.c: 44:     char days[7] = {'S','M','T','W','t','F','s'};
+-> -> 83 `ui `uc
+-> -> 77 `ui `uc
+-> -> 84 `ui `uc
+-> -> 87 `ui `uc
+-> -> 116 `ui `uc
+-> -> 70 `ui `uc
+-> -> 115 `ui `uc
+..
+]
+[v _days `uc ~T0 @X0 -> 7 `i a ]
+[e = _days F3525 ]
+"45
+[; ;clsRTC.c: 45:     OSCCON=0x72;
+[e = _OSCCON -> -> 114 `i `uc ]
+"47
+[; ;clsRTC.c: 47:     I2C_Init();
+[e ( _I2C_Init ..  ]
+"48
+[; ;clsRTC.c: 48:     LCD_Init();
+[e ( _LCD_Init ..  ]
+"49
+[; ;clsRTC.c: 49:     LCD_Clear();
+[e ( _LCD_Clear ..  ]
+"50
+[; ;clsRTC.c: 50:     _delay((unsigned long)((10)*(8000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"51
+[; ;clsRTC.c: 51:     while(1)
+[e :U 373 ]
+"52
+[; ;clsRTC.c: 52:     {
+{
+"53
+[; ;clsRTC.c: 53:         RTC_Read_Clock(0);
+[e ( _RTC_Read_Clock (1 -> -> 0 `i `uc ]
+"54
+[; ;clsRTC.c: 54:         I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"55
+[; ;clsRTC.c: 55:         if(hour & (1<<Clock_type)){
+[e $ ! != & _hour << -> 1 `i -> _Clock_type `i -> 0 `i 375  ]
+{
+"57
+[; ;clsRTC.c: 57:             if(hour & (1<<AM_PM)){
+[e $ ! != & _hour << -> 1 `i -> _AM_PM `i -> 0 `i 376  ]
+{
+"58
+[; ;clsRTC.c: 58:                 LCD_String_xy(1,14,"PM");
+[e ( _LCD_String_xy (3 , , -> -> 1 `i `uc -> -> 14 `i `uc :s 1C ]
+"59
+[; ;clsRTC.c: 59:             }
+}
+[e $U 377  ]
+"60
+[; ;clsRTC.c: 60:             else{
+[e :U 376 ]
+{
+"61
+[; ;clsRTC.c: 61:                 LCD_String_xy(1,14,"AM");
+[e ( _LCD_String_xy (3 , , -> -> 1 `i `uc -> -> 14 `i `uc :s 2C ]
+"62
+[; ;clsRTC.c: 62:             }
+}
+[e :U 377 ]
+"64
+[; ;clsRTC.c: 64:             hour = hour & (0x1f);
+[e = _hour & _hour -> 31 `i ]
+"65
+[; ;clsRTC.c: 65:             sprintf(secs,"%x ",sec);
+[e ( _sprintf (1 , (. , &U _secs :s 3C _sec ]
+"66
+[; ;clsRTC.c: 66:             sprintf(mins,"%x:",min);
+[e ( _sprintf (1 , (. , &U _mins :s 4C _min ]
+"67
+[; ;clsRTC.c: 67:             sprintf(hours,"Tim:%x:",hour);
+[e ( _sprintf (1 , (. , &U _hours :s 5C _hour ]
+"68
+[; ;clsRTC.c: 68:             LCD_String_xy(0,0,hours);
+[e ( _LCD_String_xy (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _hours `*Cuc ]
+"69
+[; ;clsRTC.c: 69:             LCD_String(mins);
+[e ( _LCD_String (1 -> &U _mins `*Cuc ]
+"70
+[; ;clsRTC.c: 70:             LCD_String(secs);
+[e ( _LCD_String (1 -> &U _secs `*Cuc ]
+"71
+[; ;clsRTC.c: 71:         }
+}
+[e $U 378  ]
+"72
+[; ;clsRTC.c: 72:         else{
+[e :U 375 ]
+{
+"74
+[; ;clsRTC.c: 74:             hour = hour & (0x3f);
+[e = _hour & _hour -> 63 `i ]
+"75
+[; ;clsRTC.c: 75:             sprintf(secs,"%x ",sec);
+[e ( _sprintf (1 , (. , &U _secs :s 6C _sec ]
+"76
+[; ;clsRTC.c: 76:             sprintf(mins,"%x:",min);
+[e ( _sprintf (1 , (. , &U _mins :s 7C _min ]
+"77
+[; ;clsRTC.c: 77:             sprintf(hours,"Tim:%x:",hour);
+[e ( _sprintf (1 , (. , &U _hours :s 8C _hour ]
+"78
+[; ;clsRTC.c: 78:             LCD_String_xy(0,0,hours);
+[e ( _LCD_String_xy (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _hours `*Cuc ]
+"79
+[; ;clsRTC.c: 79:             LCD_String(mins);
+[e ( _LCD_String (1 -> &U _mins `*Cuc ]
+"80
+[; ;clsRTC.c: 80:             LCD_String(secs);
+[e ( _LCD_String (1 -> &U _secs `*Cuc ]
+"81
+[; ;clsRTC.c: 81:         }
+}
+[e :U 378 ]
+"83
+[; ;clsRTC.c: 83:         RTC_Read_Calendar(3);
+[e ( _RTC_Read_Calendar (1 -> -> 3 `i `uc ]
+"84
+[; ;clsRTC.c: 84:         I2C_Stop();
+[e ( _I2C_Stop ..  ]
+"85
+[; ;clsRTC.c: 85:         sprintf(date,"Cal %x-",Date);
+[e ( _sprintf (1 , (. , &U _date :s 9C _Date ]
+"86
+[; ;clsRTC.c: 86:         sprintf(month,"%x-",Month);
+[e ( _sprintf (1 , (. , &U _month :s 10C _Month ]
+"87
+[; ;clsRTC.c: 87:         sprintf(year,"%x ",Year);
+[e ( _sprintf (1 , (. , &U _year :s 11C _Year ]
+"88
+[; ;clsRTC.c: 88:         LCD_String_xy(2,0,date);
+[e ( _LCD_String_xy (3 , , -> -> 2 `i `uc -> -> 0 `i `uc -> &U _date `*Cuc ]
+"89
+[; ;clsRTC.c: 89:         LCD_String(month);
+[e ( _LCD_String (1 -> &U _month `*Cuc ]
+"90
+[; ;clsRTC.c: 90:         LCD_String(year);
+[e ( _LCD_String (1 -> &U _year `*Cuc ]
+"93
+[; ;clsRTC.c: 93:         switch(days[Day])
+[e $U 380  ]
+"94
+[; ;clsRTC.c: 94:         {
+{
+"95
+[; ;clsRTC.c: 95:             case 'S':
+[e :U 381 ]
+"96
+[; ;clsRTC.c: 96:                         LCD_String("Sun");
+[e ( _LCD_String (1 :s 12C ]
+"97
+[; ;clsRTC.c: 97:                         break;
+[e $U 379  ]
+"98
+[; ;clsRTC.c: 98:             case 'M':
+[e :U 382 ]
+"99
+[; ;clsRTC.c: 99:                         LCD_String("Mon");
+[e ( _LCD_String (1 :s 13C ]
+"100
+[; ;clsRTC.c: 100:                         break;
+[e $U 379  ]
+"101
+[; ;clsRTC.c: 101:             case 'T':
+[e :U 383 ]
+"102
+[; ;clsRTC.c: 102:                         LCD_String("Tue");
+[e ( _LCD_String (1 :s 14C ]
+"103
+[; ;clsRTC.c: 103:                         break;
+[e $U 379  ]
+"104
+[; ;clsRTC.c: 104:             case 'W':
+[e :U 384 ]
+"105
+[; ;clsRTC.c: 105:                         LCD_String("Wed");
+[e ( _LCD_String (1 :s 15C ]
+"106
+[; ;clsRTC.c: 106:                         break;
+[e $U 379  ]
+"107
+[; ;clsRTC.c: 107:             case 't':
+[e :U 385 ]
+"108
+[; ;clsRTC.c: 108:                         LCD_String("Thu");
+[e ( _LCD_String (1 :s 16C ]
+"109
+[; ;clsRTC.c: 109:                         break;
+[e $U 379  ]
+"110
+[; ;clsRTC.c: 110:             case 'F':
+[e :U 386 ]
+"111
+[; ;clsRTC.c: 111:                         LCD_String("Fri");
+[e ( _LCD_String (1 :s 17C ]
+"112
+[; ;clsRTC.c: 112:                         break;
+[e $U 379  ]
+"113
+[; ;clsRTC.c: 113:             case 's':
+[e :U 387 ]
+"114
+[; ;clsRTC.c: 114:                         LCD_String("Sat");
+[e ( _LCD_String (1 :s 18C ]
+"115
+[; ;clsRTC.c: 115:                         break;
+[e $U 379  ]
+"116
+[; ;clsRTC.c: 116:             default:
+[e :U 388 ]
+"117
+[; ;clsRTC.c: 117:                         break;
+[e $U 379  ]
+"119
+[; ;clsRTC.c: 119:         }
+}
+[e $U 379  ]
+[e :U 380 ]
+[e [\ -> *U + &U _days * -> -> _Day `ui `ux -> -> # *U &U _days `ui `ux `i , $ -> -> 83 `ui `i 381
+ , $ -> -> 77 `ui `i 382
+ , $ -> -> 84 `ui `i 383
+ , $ -> -> 87 `ui `i 384
+ , $ -> -> 116 `ui `i 385
+ , $ -> -> 70 `ui `i 386
+ , $ -> -> 115 `ui `i 387
+ 388 ]
+[e :U 379 ]
+"121
+[; ;clsRTC.c: 121:     }
+}
+[e :U 372 ]
+[e $U 373  ]
+[e :U 374 ]
+"122
+[; ;clsRTC.c: 122: }
+[e :UE 371 ]
+}
+[p f _sprintf 12582912 ]
+[a 16C 84 104 117 0 ]
+[a 18C 83 97 116 0 ]
+[a 12C 83 117 110 0 ]
+[a 13C 77 111 110 0 ]
+[a 17C 70 114 105 0 ]
+[a 14C 84 117 101 0 ]
+[a 15C 87 101 100 0 ]
+[a 1C 80 77 0 ]
+[a 2C 65 77 0 ]
+[a 5C 84 105 109 58 37 120 58 0 ]
+[a 8C 84 105 109 58 37 120 58 0 ]
+[a 4C 37 120 58 0 ]
+[a 7C 37 120 58 0 ]
+[a 9C 67 97 108 32 37 120 45 0 ]
+[a 10C 37 120 45 0 ]
+[a 3C 37 120 32 0 ]
+[a 6C 37 120 32 0 ]
+[a 11C 37 120 32 0 ]

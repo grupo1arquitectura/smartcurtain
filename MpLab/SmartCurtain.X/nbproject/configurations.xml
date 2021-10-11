@@ -7,6 +7,11 @@
       <itemPath>config.h</itemPath>
       <itemPath>pinout.h</itemPath>
       <itemPath>utils.h</itemPath>
+      <itemPath>alarmas.h</itemPath>
+      <itemPath>lcd.h</itemPath>
+      <itemPath>menu.h</itemPath>
+      <itemPath>I2C_Master_File.h</itemPath>
+      <itemPath>fuses.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -16,7 +21,14 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
-      <itemPath>utils.c</itemPath>
+      <itemPath>clsDespertador.c</itemPath>
+      <itemPath>clsAlarmas.c</itemPath>
+      <itemPath>clsLcd.c</itemPath>
+      <itemPath>clsMenu.c</itemPath>
+      <itemPath>clsMotor.c</itemPath>
+      <itemPath>clsRTC.c</itemPath>
+      <itemPath>clsTeclado.c</itemPath>
+      <itemPath>clsBluetooth.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -158,7 +170,7 @@
         <property key="oscillator.rcfrequency" value="250"/>
         <property key="oscillator.rcfrequencyunit" value="Kilo"/>
         <property key="periphADC1.altscl" value="false"/>
-        <property key="periphADC1.minTacq" value=""/>
+        <property key="periphADC1.minTacq" value="5"/>
         <property key="periphADC1.tacqunits" value="microseconds"/>
         <property key="periphADC2.altscl" value="false"/>
         <property key="periphADC2.minTacq" value=""/>
